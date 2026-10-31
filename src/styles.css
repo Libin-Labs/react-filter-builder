@@ -1,0 +1,38 @@
+.lp-filter {
+  --lp-filter-border: #b8c2ce;
+  --lp-filter-accent: #1d4ed8;
+  font:
+    1rem/1.5 system-ui,
+    sans-serif;
+  color: #172033;
+}
+.lp-filter-group {
+  border: 1px solid var(--lp-filter-border);
+  padding: 0.8rem;
+  margin-block: 0.5rem;
+  min-width: 0;
+}
+.lp-filter-node {
+  margin-block: 0.7rem;
+}
+.lp-filter-rule,
+.lp-filter-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block: 0.5rem;
+}
+.lp-filter :is(input, select, button) {
+  font: inherit;
+  max-width: 100%;
+}
+.lp-filter :is(input, select, button):focus-visible {
+  outline: 2px solid var(--lp-filter-accent);
+  outline-offset: 2px;
+}
+.lp-filter [aria-invalid='true'] {
+  border: 2px solid #a32020;
+}
+.lp-filter [role='alert'] {
+  color: #a32020;
+}

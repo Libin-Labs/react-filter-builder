@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "jsx": "react-jsx",
+    "lib": ["ES2020", "DOM"],
+    "strict": true,
+    "declaration": true,
+    "outDir": "dist/esm",
+    "rootDir": "src",
+    "verbatimModuleSyntax": false,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
